@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "XPathExtension",
+    "version": "0.0.1",
+    "description": "",
+  
+    "action": {
+      "default_popup": "pop_view.html"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": [
+          "main.js"
+        ]
+      }
+    ]
+  }
